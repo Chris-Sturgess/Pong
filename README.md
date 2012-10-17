@@ -14,7 +14,7 @@ This also includes a quick script I wrote to automatically create a directory fo
 
 ##Dev Log
 
-#Part 1: Images
+###Part 1: Images
 
 I'm using the built in function to add 4 images to the screen. I'll import the ball, change the BG for the background, and draw the paddles as rectangles. Then, I'll use the built in text functions to display a scoreboard at the top. Also, because nobody is reading this, I'm watching Inception right now. It's deep, man. Deep.
 
