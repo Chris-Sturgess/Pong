@@ -27,3 +27,6 @@ I successfully got this thing running with modules. I'm using one for the ball a
 
 ###Part 3: Keyboard Input 
 It works! Easier than expected. Went quickly. Seriously, The Prestige. Watch it, if you haven't. You know what? Even if you have. Watch The Prestige.
+
+###Part 4: Menu and Clicking
+Menu added. Clicking is odd. Might implement a different way to do that in the future. Also, may be better to use actual images for the menu screen.

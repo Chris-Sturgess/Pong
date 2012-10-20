@@ -13,6 +13,7 @@ enemyScore = 0
 playerTextLoc = 0
 paddle = modules.paddle
 puck = modules.puck
+playing = false
 
 function love.load()
 
@@ -24,18 +25,24 @@ function love.load()
 end
 
 function love.update()
-
-	score(puck.move(ball))
-	paddle.move(player)
-	paddle.move(enemy)
-
+	if playing then
+		score(puck.move(ball))
+		paddle.move(player)
+		paddle.move(enemy)
+	else
+		checkForStart()
+	end
 end
 
 function love.draw()
-	drawMidLine()
-	drawPaddles()
-	drawScores()
-	drawBall()
+	if playing then
+		drawMidLine()
+		drawPaddles()
+		drawScores()
+		drawBall()
+	else
+		drawMenu()
+	end
 end
 
 function drawScores()
@@ -69,5 +76,20 @@ function score(scoreVal)
 		if playerScore == 10 then playerTextLoc = 90 end
 	elseif scoreVal == -1 then 
 		enemyScore = enemyScore + 1
+	end
+end
+
+function drawMenu()
+	love.graphics.setColor(255,255,255)
+	love.graphics.setFont(scoreFont)
+	love.graphics.rectangle("line", 300, 300, 400, 100)
+	love.graphics.print("Play", 385, 320)
+	love.graphics.print("PONG", 260, 100, 0, 2, 2)
+end
+
+function checkForStart()
+	if love.mouse.isDown("l") and love.mouse.getX() < 700 and love.mouse.getX() > 200 and love.mouse.getY() > 300 and love.mouse.getY() < 400 then
+		playing = true
+		love.mouse.setVisible(false)
 	end
 end
