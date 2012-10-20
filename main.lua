@@ -18,8 +18,8 @@ function love.load()
 
 	ball = puck.init()
 	scoreFont = love.graphics.setNewFont("fonts/segment14.ttf",100)
-	player = paddle.init(20)
-	enemy = paddle.init(980)
+	player = paddle.init(20, true)
+	enemy = paddle.init(980, false)
 	
 end
 
