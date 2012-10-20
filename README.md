@@ -24,3 +24,6 @@ I added in a score system and learned how to add in the fonts. Now, it's all set
 
 ###Part 2: Multiple Files
 I successfully got this thing running with modules. I'm using one for the ball and another for the paddles. Score can stay in main.lua. I'm noticing some lag. That shouldn't be happening. I'll add that to the list. Anyways, Modules are done. Next up, keyboard control. Also, The Prestige is a great movie. Getting to the part where Tesla walks through the electricity in the air. Dude's badass.
+
+###Part 3: Keyboard Input 
+It works! Easier than expected. Went quickly. Seriously, The Prestige. Watch it, if you haven't. You know what? Even if you have. Watch The Prestige.
