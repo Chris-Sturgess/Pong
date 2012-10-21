@@ -16,7 +16,7 @@ function draw(paddle)
 end	
 	
 function init(startX, player)
-	startSpeed = 5
+	startSpeed = 10
 	startY = 200
 	startWidth = 10
 	startHeight = 100

@@ -30,3 +30,6 @@ It works! Easier than expected. Went quickly. Seriously, The Prestige. Watch it,
 
 ###Part 4: Menu and Clicking
 Menu added. Clicking is odd. Might implement a different way to do that in the future. Also, may be better to use actual images for the menu screen.
+
+###Part 5: Logic is magic.
+Added Puck Logic. Shouldn't have hardcoded as many values as I did, but that's alright, this is just an experiment. I could also clean up the code a little, there's a bit of duplication, but it's not really worth the time. Once again, experiment. That's how I excuse my own inbuilt laziness. It's almost done. Tomorrow I will add a game won screen and then the ability to restart. Now, I am going to sleep. Right after Adventure time. Oh, Jake. You so crazy.
