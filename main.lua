@@ -20,13 +20,13 @@ function love.load()
 	ball = puck.init()
 	scoreFont = love.graphics.setNewFont("fonts/segment14.ttf",100)
 	player = paddle.init(20, true)
-	enemy = paddle.init(980, false)
+	enemy = paddle.init(970, false)
 	
 end
 
 function love.update()
 	if playing then
-		score(puck.move(ball))
+		score(puck.move(ball, player.y, enemy.y))
 		paddle.move(player)
 		paddle.move(enemy)
 	else
@@ -74,8 +74,10 @@ function score(scoreVal)
 	if scoreVal == 1 then
 		playerScore = playerScore + 1
 		if playerScore == 10 then playerTextLoc = 90 end
+		ball = puck.init()
 	elseif scoreVal == -1 then 
 		enemyScore = enemyScore + 1
+		ball = puck.init()
 	end
 end
 
